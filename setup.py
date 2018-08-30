@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 import os
 
 setup(
-    name = 'ansible-dependencies', version = '2.6.1.2',
+    name = 'ansible-dependencies', version = '2.6.1.3',
     install_requires=[
     'apache-libcloud',
     'aws-sudo',
@@ -50,6 +50,7 @@ setup(
     'textfsm',
     'urllib3==1.22',
     'vapi-client-bindings',
+    'yamllint',
     'yq',
     'zabbix-api'
     ],
