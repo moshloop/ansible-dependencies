@@ -1,0 +1,11 @@
+language: python
+python:
+- 3.6.5
+script: python setup.py sdist
+deploy:
+  provider: pypi
+  user: moshe.immerman
+  password:
+    secure: ReTPxOMyInRAeoz3RaPJ/po772wfGtlbHUFmaPBqVmuTV0tQTGgc6LRnr9tl7tGw9h7ATzlsA0wq4c/G6+sUPCmPGdwMrNSzwNnHTtDpT3Ldr9Ru7Fffg6usaFbvB6P9D8AdJdtRJUXbcMc+tf2HjkMiU/og+mfDcBTShuotxA0851ak6V/Fv+m99RQ56N5er/X907KbysEJY6QNrrzmUELVqePh2xlznWkmnZlAT6/jNuA4h6R0toE9KDzHUuHzrgar0PxY/bSHiB1REz23H7BSh1QI+GrEgWOlLe0KGSJrr+8FC7xM91IhkuX6VGU7SA6UuUpUCL/LMwnQeW3vxmkzKCTJpAm5J4F9fh+GZz0EIjIxubq2RzFCxeHtVlQRDZBfqmREiueHP3zoMzBCum+I52e4JoWMyYC1kx1I89EPSIRyf3r6gwQ+ipxLRJPARvNuhfSWhRI0pZ3h3WL4j7t2M+xU/f8VjG8PybKi+wOu3VmJIMolJUdWtSpU+nP5kTMHmJul5jHCwlfgxQD129yq5TThtrZQimp49jcLAwDUHQUhEpwnD1vJp8kUKrTN6bMUDvoSMv0XMHUveit6zcQTP90af3GvIhQCXwhQIRV3FyFGq5zEaILo00972LMgbHmuUQIq8wZucvJycFTOb0kqjiQo7ATxbkPvuLVE7h4=
+  on:
+    tags: true
