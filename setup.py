@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 import os
 
 setup(
-    name = 'ansible-dependencies', version = '2.6.1',
+    name = 'ansible-dependencies', version = '2.6.1.1',
     install_requires=[
     'yq',
     'urllib3==1.22',
@@ -31,6 +31,11 @@ setup(
     'apache-libcloud',
     'vapi-client-bindings',
     'pyOpenSSL==16.2.0',
+    'mock',
+    'pytest',
+    'pylint',
+    'pycodestyle',
+    'junit_xml'
     ],
     url = 'https://www/github.com/moshloop/ansible-dependencies',
     author = 'Moshe Immerman', author_email = 'firstname.surname@gmail.com'
