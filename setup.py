@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 import os
 
 setup(
-    name = 'ansible-dependencies', version = '2.6.1.1',
+    name = 'ansible-dependencies', version = '2.6.1.2',
     install_requires=[
     'apache-libcloud',
     'aws-sudo',
