@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 import os
 
 setup(
-    name = 'ansible-dependencies', version = '2.6.1.3',
+    name = 'ansible-dependencies', version = '2.6.1.4',
     install_requires=[
     'apache-libcloud',
     'aws-sudo',
@@ -38,7 +38,7 @@ setup(
     'pylint',
     'pyOpenSSL==16.2.0',
     'pytest',
-    'python-ldap',
+#    'python-ldap', requires source compilation
     'pyvmomi',
     'pywinrm[credssp]',
     'pywinrm[kerberos]',
