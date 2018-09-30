@@ -3,57 +3,65 @@ from subprocess import *
 from setuptools import setup, find_packages
 import os
 
-setup(
-    name = 'ansible-dependencies', version = '2.6.1.4',
-    install_requires=[
+minimal = [
+    'docker-py',
+    'certifi',
+    'cryptography',
+    'dnspython',
+    'ipaddress',
+    'jmespath',
+    'netaddr',
+    'passlib',
+    'pexpect',
+    'pyOpenSSL==16.2.0',
+    #    'python-ldap', requires source compilation
+    'requests',
+    'requests_ntlm',
+    'scp',
+    'string_format',
+    'urllib3==1.22'
+    ]
+test = [
+    'pycodestyle',
+    'pylint',
+    'pytest',
+    'virtualenv',
+    'yamllint',
+    'mock',
+    'junit_xml'
+    ]
+
+cloud = [
     'apache-libcloud',
     'aws-sudo',
     'awscli',
     'boto',
-    'certifi',
     'cidrtrie',
-    'cryptography',
     'cs',
-    'dnspython',
-    'docker-compose',
-    'docker-py',
     'f5-sdk',
     'github3.py',
     'heroku3',
     'infoblox-client',
-    'ipaddress',
-    'jmespath',
-    'junit_xml',
     'jxmlease',
-    'mock',
     'ncclient',
-    'netaddr',
-    'openpyxl',
     'openshift',
-    'pandas',
     'pandevice',
-    'passlib',
-    'pexpect',
-    'pycodestyle',
-    'pylint',
-    'pyOpenSSL==16.2.0',
-    'pytest',
-#    'python-ldap', requires source compilation
     'pyvmomi',
     'pywinrm[credssp]',
     'pywinrm[kerberos]',
-    'requests',
-    'requests_ntlm',
     's3cmd',
-    'scp',
     'storops',
     'textfsm',
-    'urllib3==1.22',
     'vapi-client-bindings',
-    'yamllint',
-    'yq',
     'zabbix-api'
-    ],
+]
+
+setup(
+    name = 'ansible-dependencies', version = '2.6.6.1',
     url = 'https://www/github.com/moshloop/ansible-dependencies',
+    install_requires= minimal,
+    extras_require = dict(
+        cloud=cloud,
+        test=test,
     author = 'Moshe Immerman', author_email = 'firstname.surname@gmail.com'
     )
