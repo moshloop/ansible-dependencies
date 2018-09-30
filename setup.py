@@ -57,11 +57,12 @@ cloud = [
 ]
 
 setup(
-    name = 'ansible-dependencies', version = '2.6.6.1',
-    url = 'https://www/github.com/moshloop/ansible-dependencies',
+    name = 'ansible-dependencies', version = '2.6.5.1',
+    url = 'https://www.github.com/moshloop/ansible-dependencies',
     install_requires= minimal,
     extras_require = dict(
         cloud=cloud,
-        test=test,
+        all=cloud + test,
+        test=test),
     author = 'Moshe Immerman', author_email = 'firstname.surname@gmail.com'
     )
