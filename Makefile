@@ -6,7 +6,8 @@ TARGET ?= $(shell pwd)/target/ansible
 
 .PHONY: package
 package: prepare-in-docker-py
-	rm *.rpm *.deb || echo
+	rm portable-ansible-py$(PY_VERSION)-$(VERSION)-1.x86_64.rpm || echo
+	rm portable-ansible-py$(PY_VERSION)_$(VERSION)_amd64.deb || echo
 	docker run --rm -it -v $(CURDIR):$(CURDIR) -w $(CURDIR) alanfranz/fpm-within-docker:centos-7 fpm  -s dir -t rpm -n $(NAME) -v $(VERSION) -x "*.DS_Store" ./bin/=/usr/bin/ ./target/=/usr/local/ansible/
 
 	docker run --rm -it -v $(CURDIR):$(CURDIR) -w $(CURDIR) alanfranz/fpm-within-docker:ubuntu-xenial fpm  -s dir -t deb -n $(NAME) -v $(VERSION) -x "*.DS_Store" ./bin/=/usr/bin/ ./target/=/usr/local/ansible/
