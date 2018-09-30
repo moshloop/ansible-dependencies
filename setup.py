@@ -18,7 +18,6 @@ minimal = [
     'requests',
     'requests_ntlm',
     'scp',
-    'string_format',
     'urllib3==1.22'
     ]
 test = [
@@ -57,7 +56,7 @@ cloud = [
 ]
 
 setup(
-    name = 'ansible-dependencies', version = '2.6.5.1',
+    name = 'ansible-dependencies', version = '2.6.5.2',
     url = 'https://www.github.com/moshloop/ansible-dependencies',
     install_requires= minimal,
     extras_require = dict(
