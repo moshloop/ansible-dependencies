@@ -3,5 +3,17 @@ python:
 - 3.6.5
 script:
   - pip install twine
+  - make PY_VERSION=2
+  - make PY_VERSION=3
   - python setup.py sdist
   - twine upload dist/*.tar.gz
+
+deploy:
+  provider: releases
+  api_key: $GITHUB_TOKEN
+  file_glob: true
+  file:
+    - builds/*.tar.bz2
+    - "*.rpm"
+    - "*.deb"
+  skip_cleanup: true
