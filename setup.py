@@ -25,7 +25,7 @@ minimal = [
     ]
 test = [
     'pycodestyle',
-    'pylint',
+    'pylint==1.9.3',
     'pytest',
     'virtualenv',
     'yamllint',
