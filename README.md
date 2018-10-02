@@ -4,7 +4,7 @@ Inspired / Cloned from [portable-ansible](https://github.com/ownport/portable-an
 
 ## pip meta package
 
-Install for docker, ipaddr, vault, rabbit, nsupdate, nxos, scp
+Install dependencies for docker, ipaddr, vault, rabbit, nsupdate, nxos, scp
 ```bash
 pip install ansible-dependencies
 ```
@@ -16,10 +16,11 @@ Install dependencies for F5, Palo Alto, Infoblox, EMC, netconf, Juniper
 ```bash
 pip install ansible-dependencies[network]
 ```
-Install packages required for testing ansible
+Install dependencies for testing ansible
 ```bash
 pip install ansible-dependencies[test]
 ```
+Install everything
 ```bash
 pip install ansible-dependencies[all]
 ```
