@@ -28,6 +28,7 @@ test = [
     'pylint==1.9.3',
     'pytest',
     'virtualenv',
+    'voluptuous',
     'yamllint',
     'mock',
     'junit_xml'
@@ -62,7 +63,7 @@ cloud = [
 ]
 
 setup(
-    name = 'ansible-dependencies', version = '2.6.5.3',
+    name = 'ansible-dependencies', version = '2.6.5.4',
     url = 'https://www.github.com/moshloop/ansible-dependencies',
     install_requires= minimal,
     extras_require = dict(
