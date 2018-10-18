@@ -50,6 +50,7 @@ cloud = [
     'aws-sudo',
     'awscli',
     'boto',
+    'boto3',
     'cs', #cloudstack
     'github3.py',
     'heroku3',
@@ -63,7 +64,7 @@ cloud = [
 ]
 
 setup(
-    name = 'ansible-dependencies', version = '2.6.5.4',
+    name = 'ansible-dependencies', version = '2.6.5.5',
     url = 'https://www.github.com/moshloop/ansible-dependencies',
     install_requires= minimal,
     extras_require = dict(
