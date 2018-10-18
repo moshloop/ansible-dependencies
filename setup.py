@@ -6,6 +6,7 @@ import os
 minimal = [
     'docker-py',
     'docker-compose',
+    'wheel',
     'certifi',
     'cryptography',
     'dnspython',
@@ -64,7 +65,7 @@ cloud = [
 ]
 
 setup(
-    name = 'ansible-dependencies', version = '2.6.5.5',
+    name = 'ansible-dependencies', version = '2.6.5.6',
     url = 'https://www.github.com/moshloop/ansible-dependencies',
     install_requires= minimal,
     extras_require = dict(
