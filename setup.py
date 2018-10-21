@@ -28,6 +28,7 @@ test = [
     'pycodestyle',
     'pylint==1.9.3',
     'pytest',
+    'ansible-lint',
     'virtualenv',
     'voluptuous',
     'yamllint',
@@ -36,14 +37,16 @@ test = [
     ]
 
 network = [
-    'textfsm',
+    'bigsuds',
+    'deepdiff',
+    'f5-sdk', # F5 Load balancers,
     'infoblox-client',
     'jxmlease',
-    'objectpath',
-    'storops', # EMC
-    'pandevice', # Palo Alto Firewall,
-    'f5-sdk', # F5 Load balancers,
     'ncclient', # netconf
+    'objectpath',
+    'pandevice', # Palo Alto Firewall,
+    'storops', # EMC
+    'textfsm',
 ]
 
 cloud = [
