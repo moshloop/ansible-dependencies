@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 import os
 
 minimal = [
-    'docker-py',
+    'docker',
     'docker-compose',
     'wheel',
     'certifi',
