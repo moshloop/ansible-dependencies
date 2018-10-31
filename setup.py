@@ -60,6 +60,7 @@ cloud = [
     'heroku3',
     'openshift',
     'pyrax', #OpenStack
+    'fixtures',
     'pyvmomi', #VMWare
     'pywinrm[credssp]',
     'pywinrm[kerberos]',
@@ -68,7 +69,7 @@ cloud = [
 ]
 
 setup(
-    name = 'ansible-dependencies', version = '2.7',
+    name = 'ansible-dependencies', version = '2.8',
     url = 'https://www.github.com/moshloop/ansible-dependencies',
     install_requires= minimal,
     extras_require = dict(
