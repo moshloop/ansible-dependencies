@@ -69,7 +69,7 @@ cloud = [
 ]
 
 setup(
-    name = 'ansible-dependencies', version = '2.8',
+    name = 'ansible-dependencies', version = '2.8.1',
     url = 'https://www.github.com/moshloop/ansible-dependencies',
     install_requires= minimal,
     extras_require = dict(
