@@ -38,7 +38,7 @@ test = [
 
 network = [
     'bigsuds',
-    'deepdiff',
+    'deepdiff==3.3.0',
     'f5-sdk', # F5 Load balancers,
     'infoblox-client',
     'jxmlease',
