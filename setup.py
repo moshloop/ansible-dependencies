@@ -17,7 +17,7 @@ minimal = [
     'hvac', # Hashicorp Vault lookup
     'passlib',
     'pexpect',
-    'pyOpenSSL==16.2.0',
+    'pyOpenSSL==17.5.0',
     #    'python-ldap', requires source compilation
     'requests',
     'requests_ntlm',
