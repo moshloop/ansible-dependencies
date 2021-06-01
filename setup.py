@@ -22,7 +22,7 @@ minimal = [
     'requests',
     'requests_ntlm',
     'scp',
-    'urllib3==1.22'
+    'urllib3==1.26.5'
     ]
 test = [
     'pycodestyle',
